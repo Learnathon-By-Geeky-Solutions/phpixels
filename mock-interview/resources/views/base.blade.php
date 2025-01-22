@@ -59,6 +59,12 @@
             min-height: calc(100vh - 160px); /* Adjust for header and footer height */
         }
 
+        header img{
+            width: 20%;
+            height: auto;
+            border-radius: 50%;
+        }
+
         footer {
             background-color: #343a40;
             color: white;
@@ -83,7 +89,7 @@
             <div class="row align-items-center">
                 <div class="col-3 text-start">
                     <div class="logo">
-                        <img src="{{ asset('images/logo.png') }}" alt="Logo">
+                        <img src="{{ asset('images/images2.png') }}" alt="Logo">
                         <span>Test Yourself</span>
                     </div>
                 </div>
