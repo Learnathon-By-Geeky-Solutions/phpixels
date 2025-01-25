@@ -16,15 +16,23 @@
         }
 
         header {
-            background-color: #007bff;
-            color: white;
+            background-color: #e5eaee;
+            color:rgb(84, 149, 214);
             padding: 15px 20px;
             display: flex;
             justify-content: space-between;
             align-items: center;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
-
+        .rounded-button {
+            color: white; /* White text */
+            border: none; /* Remove default border */
+            padding: 10px 20px; /* Add some padding */
+            font-size: 16px; /* Set font size */
+            border-radius: 20px; /* Make corners rounded */
+            cursor: pointer; /* Pointer cursor on hover */
+            transition: background-color 0.3s; /* Smooth hover effect */
+        }
         header ul{
             list-style: none;
             padding: 0;
@@ -36,22 +44,21 @@
         header .col-6 ul li {
             margin-right: 20px;
             padding: 5px 10px;
-            color: white;
+            color: black;
         }
-
+        
         header .col-3 ul li {
             padding: 10px 10px;
             color: white;
         }
 
         header a{
-            color: white;
+            color:rgb(133, 51, 51);
             text-decoration: none;
         }
 
         header a:hover {
-            font-weight: bold;
-            color :rgb(236, 180, 9);
+            color :rgb(223, 97, 14);
         }
         
         main {
@@ -64,7 +71,12 @@
             height: auto;
             border-radius: 50%;
         }
-
+        .login-btn{
+            color:rgb(50, 58, 66);
+        }
+        .login-btn:hover{
+            color:rgb(196, 114, 32);
+        }
         footer {
             background-color: #343a40;
             color: white;
@@ -89,8 +101,8 @@
             <div class="row align-items-center">
                 <div class="col-3 text-start">
                     <div class="logo">
-                        <img src="{{ asset('images/images2.png') }}" alt="Logo">
-                        <span>Test Yourself</span>
+                        <a href="{{route('home')}}"><img src="{{ asset('images/images2.png') }}" alt="Logo"></a>
+                        <span><b><a href="{{route('home')}}">Test Yourself</a></b></span>
                     </div>
                 </div>
                 <div class="col-6">
@@ -104,8 +116,8 @@
                 <div class="col-3 text-end">
                     <div class="auth-buttons">
                         <ul>
-                            <li><a class="btn btn-warning" href="#">Login</a></li>
-                            <li><a class="btn btn-danger" href="#">Start for Free</a></li>
+                            <li><a class="btn rounded-button login-btn" href="#">Login</a></li>
+                            <li><a class="btn btn-danger rounded-button" href="#">Start for Free</a></li>
                         </ul>
 
                     </div>
